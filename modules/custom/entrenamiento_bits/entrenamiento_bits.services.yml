@@ -1,0 +1,6 @@
+services:
+  entrenamiento_bits.employee_provider:
+    class: Drupal\entrenamiento_bits\Services\EmployeeProvider
+    arguments:
+      - '@entity_type.manager'
+      - '@config.factory'

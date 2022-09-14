@@ -1,0 +1,5 @@
+clave_Api_form.links:
+  title: 'Clave Api Form'
+  route_name: entrenamiento_bits.api_form
+  parent: system.admin
+  position: -1
