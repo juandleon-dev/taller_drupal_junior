@@ -249,7 +249,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '4JJHflw7dRS7Swt7G33tq-QEo2TDSEhyAsDp85BSESMAETflXui78-ojL9iLn-hEmYgIqYeh2g';
+$settings['hash_salt'] = 'Ge17Rrqf84UL-EBzJbP9T287CWJTEP2pv2nQLJTORKnWe3JHSbqG_yTnSZGCfiRafOBajuR6QA';
 
 /**
  * Deployment identifier.
@@ -794,15 +794,18 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+
+$settings['config_sync_directory'] = 'sites/default/files/config_6yAo0TAb3UeUfFML8kd9c2bVmnXgHSzmkVUYV8PVakQ-T4lRU1QnYk7BLn4XYaE3ozgcOYApkA/sync';
+
+$config['system.logging']['error_level'] = 'verbose';
 $databases['default']['default'] = array (
-  'database' => 'primer_taller',
-  'username' => 'admin',
-  'password' => 'admin',
+  'database' => 'drupal',
+  'username' => 'drupal',
+  'password' => 'drupal',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => 'database',
   'port' => '3306',
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_6yAo0TAb3UeUfFML8kd9c2bVmnXgHSzmkVUYV8PVakQ-T4lRU1QnYk7BLn4XYaE3ozgcOYApkA/sync';
