@@ -1,0 +1,12 @@
+langcode: en
+status: true
+id: endpoint_employee_resource
+plugin_id: endpoint_employee_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

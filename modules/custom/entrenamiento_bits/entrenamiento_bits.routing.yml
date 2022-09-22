@@ -5,13 +5,3 @@ entrenamiento_bits.api_form:
     _form: '\Drupal\entrenamiento_bits\Form\ApiConfigurationForm'
   requirements:
     _permission: 'api_form crear API de Bits'
-
-api_test.content:
-  path: '/api/test'
-  defaults:
-    _controller: '\Drupal\entrenamiento_bits\Controller\ApiController::apiTest'
-    _title: 'Api Test'
-  methods:
-    - 'GET'
-  requirements:
-    _access: 'TRUE'
